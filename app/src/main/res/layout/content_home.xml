@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/imagecard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/hairlogo"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/dsectxt"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagecard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="DISCLAIMER:"
+        android:textColor="#e408b8"
+        android:textSize="25dp"
+        android:textStyle="normal|bold|italic"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagecard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Donating hair for cancer patients is both easy and rewarding and anyone can do so. Our hair that takes so long to grow can be made into a beautiful wig for someone who really needs it to maintain a positive body image after her hair is shed due to chemotherapy."
+        android:textColor="#e408b8"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal|bold|italic"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dsectxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:onClick="oncl"
+        android:text="lets Do it.!" />
+
+</RelativeLayout>
